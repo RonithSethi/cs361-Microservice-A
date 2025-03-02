@@ -17,7 +17,7 @@ while True:
 
     # Executes when 'cancel' is written
     if x == "cancel":
-        count = 0 # reset variables
+        count = 0
         amount = 0
         y = open("pipeA.txt", "w") # clear the txt file
         y.close()
@@ -29,8 +29,6 @@ while True:
         if count >= amount:
             y = open("pipeA.txt", "w")
             y.write("beep")
-            # print("beep was written in the txt file.")
-            # ^ test print ^
             y.close()
-            amount = 0 # reset variables
+            amount = 0
             count = 0
